@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110412902ADC800E22BC0 /* AppDelegate.swift */; };
 		94F110442902ADC800E22BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110432902ADC800E22BC0 /* SceneDelegate.swift */; };
-		94F110462902ADC800E22BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110452902ADC800E22BC0 /* ViewController.swift */; };
 		94F110492902ADC800E22BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F110472902ADC800E22BC0 /* Main.storyboard */; };
 		94F1104B2902ADC900E22BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F1104A2902ADC900E22BC0 /* Assets.xcassets */; };
 		94F1104E2902ADC900E22BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F1104C2902ADC900E22BC0 /* LaunchScreen.storyboard */; };
+		94F110622903C30B00E22BC0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110612903C30B00E22BC0 /* Profile.swift */; };
+		94F110642903C33000E22BC0 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110632903C33000E22BC0 /* Chapter.swift */; };
+		94F110662903C34C00E22BC0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110652903C34C00E22BC0 /* Repository.swift */; };
+		94F1106B2903C47F00E22BC0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1106A2903C47F00E22BC0 /* Common.swift */; };
+		94F1106E2903C66500E22BC0 /* ProfileModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1106D2903C66500E22BC0 /* ProfileModuleProtocols.swift */; };
+		94F110722903C6D700E22BC0 /* ProfileModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110712903C6D700E22BC0 /* ProfileModuleView.swift */; };
+		94F110742903C81300E22BC0 /* ProfileModuleView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110732903C81300E22BC0 /* ProfileModuleView+TableView.swift */; };
+		94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F11075290423A800E22BC0 /* ProfileModuleRouter.swift */; };
+		94F110782904260300E22BC0 /* ProfileModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110772904260300E22BC0 /* ProfileModuleInteractor.swift */; };
+		94F1107A2904268300E22BC0 /* ProfileModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110792904268300E22BC0 /* ProfileModulePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94F1103E2902ADC800E22BC0 /* GitHubClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F110412902ADC800E22BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F110432902ADC800E22BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94F110452902ADC800E22BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94F110482902ADC800E22BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94F1104A2902ADC900E22BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94F1104D2902ADC900E22BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94F1104F2902ADC900E22BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F110612903C30B00E22BC0 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		94F110632903C33000E22BC0 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		94F110652903C34C00E22BC0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		94F1106A2903C47F00E22BC0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		94F1106D2903C66500E22BC0 /* ProfileModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleProtocols.swift; sourceTree = "<group>"; };
+		94F110712903C6D700E22BC0 /* ProfileModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleView.swift; sourceTree = "<group>"; };
+		94F110732903C81300E22BC0 /* ProfileModuleView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileModuleView+TableView.swift"; sourceTree = "<group>"; };
+		94F11075290423A800E22BC0 /* ProfileModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleRouter.swift; sourceTree = "<group>"; };
+		94F110772904260300E22BC0 /* ProfileModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleInteractor.swift; sourceTree = "<group>"; };
+		94F110792904268300E22BC0 /* ProfileModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,8 @@
 		94F11059290322E400E22BC0 /* ProfileModule */ = {
 			isa = PBXGroup;
 			children = (
+				94F1106C2903C63800E22BC0 /* Protocols */,
+				94F110672903C45C00E22BC0 /* Common */,
 				94F1105A290322FC00E22BC0 /* View */,
 				94F1105B2903230A00E22BC0 /* Interactor */,
 				94F1105C2903231600E22BC0 /* Presenter */,
@@ -113,8 +133,9 @@
 		94F1105A290322FC00E22BC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				94F110452902ADC800E22BC0 /* ViewController.swift */,
+				94F110712903C6D700E22BC0 /* ProfileModuleView.swift */,
 				94F110472902ADC800E22BC0 /* Main.storyboard */,
+				94F110732903C81300E22BC0 /* ProfileModuleView+TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +143,7 @@
 		94F1105B2903230A00E22BC0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				94F110772904260300E22BC0 /* ProfileModuleInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -129,6 +151,7 @@
 		94F1105C2903231600E22BC0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				94F110792904268300E22BC0 /* ProfileModulePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -136,6 +159,9 @@
 		94F1105D2903232500E22BC0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				94F110612903C30B00E22BC0 /* Profile.swift */,
+				94F110632903C33000E22BC0 /* Chapter.swift */,
+				94F110652903C34C00E22BC0 /* Repository.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -143,8 +169,25 @@
 		94F1105E2903233B00E22BC0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				94F11075290423A800E22BC0 /* ProfileModuleRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		94F110672903C45C00E22BC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				94F1106A2903C47F00E22BC0 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		94F1106C2903C63800E22BC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				94F1106D2903C66500E22BC0 /* ProfileModuleProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,9 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94F110462902ADC800E22BC0 /* ViewController.swift in Sources */,
+				94F110642903C33000E22BC0 /* Chapter.swift in Sources */,
+				94F110622903C30B00E22BC0 /* Profile.swift in Sources */,
+				94F1106E2903C66500E22BC0 /* ProfileModuleProtocols.swift in Sources */,
 				94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */,
+				94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */,
+				94F110722903C6D700E22BC0 /* ProfileModuleView.swift in Sources */,
+				94F1107A2904268300E22BC0 /* ProfileModulePresenter.swift in Sources */,
 				94F110442902ADC800E22BC0 /* SceneDelegate.swift in Sources */,
+				94F110662903C34C00E22BC0 /* Repository.swift in Sources */,
+				94F110782904260300E22BC0 /* ProfileModuleInteractor.swift in Sources */,
+				94F110742903C81300E22BC0 /* ProfileModuleView+TableView.swift in Sources */,
+				94F1106B2903C47F00E22BC0 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
