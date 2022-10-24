@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyListsCell" rowHeight="184" id="KGk-i7-Jjw" customClass="MyListsCell" customModule="GitHubClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your first list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="739-yx-mCM">
+                        <rect key="frame" x="20" y="25" width="310" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lists make it easier to organize and curate repositories you have starred." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-0l-oZF">
+                        <rect key="frame" x="40" y="60.5" width="270" height="38.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <color key="highlightedColor" systemColor="secondaryLabelColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWe-Yv-9oP">
+                        <rect key="frame" x="45" y="114" width="260" height="40"/>
+                        <color key="backgroundColor" red="0.72714782225178665" green="0.80945120690259609" blue="0.8477943497474747" alpha="0.25421668046357621" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DLf-Yg-KV2"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Create a list">
+                                    <attributes>
+                                        <font key="NSFont" size="16" name="Helvetica"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DWe-Yv-9oP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="NpP-wq-sgC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DWe-Yv-9oP" secondAttribute="trailing" constant="25" id="TlK-7d-S5e"/>
+                    <constraint firstItem="DWe-Yv-9oP" firstAttribute="top" secondItem="aaq-0l-oZF" secondAttribute="bottom" constant="15" id="aaa-tX-D8c"/>
+                    <constraint firstAttribute="trailing" secondItem="739-yx-mCM" secondAttribute="trailing" constant="20" id="gKZ-Il-ZdI"/>
+                    <constraint firstItem="739-yx-mCM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="j2j-t8-u3h"/>
+                    <constraint firstAttribute="trailing" secondItem="aaq-0l-oZF" secondAttribute="trailing" constant="40" id="jFd-Vx-rHK"/>
+                    <constraint firstItem="aaq-0l-oZF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="kbn-bH-Hfi"/>
+                    <constraint firstItem="739-yx-mCM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kyD-r5-WmP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DWe-Yv-9oP" secondAttribute="bottom" constant="19" id="w75-0S-fvD"/>
+                    <constraint firstItem="aaq-0l-oZF" firstAttribute="top" secondItem="739-yx-mCM" secondAttribute="bottom" constant="15" id="ygM-DW-Hla"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="166.66666666666669" y="147.32142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
