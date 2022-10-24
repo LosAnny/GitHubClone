@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesChapterView" customModule="GitHubClone" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarredRepositoriesView" customModule="GitHubClone" customModuleProvider="target">
             <connections>
-                <outlet property="repositoriesTableView" destination="9Ap-oW-5u2" id="n2A-Bu-nhc"/>
+                <outlet property="repositoriesTableView" destination="hVc-Lf-kZA" id="dmG-rj-xQp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +19,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-oW-5u2">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="70" estimatedSectionHeaderHeight="-1" sectionFooterHeight="40" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hVc-Lf-kZA">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="9Ap-oW-5u2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0hI-aC-PeB"/>
-                <constraint firstAttribute="bottom" secondItem="9Ap-oW-5u2" secondAttribute="bottom" id="9L6-Wd-1Go"/>
-                <constraint firstItem="9Ap-oW-5u2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FGB-zW-j46"/>
-                <constraint firstItem="9Ap-oW-5u2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="a3o-nD-y24"/>
+                <constraint firstItem="hVc-Lf-kZA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I06-cI-Dfy"/>
+                <constraint firstAttribute="bottom" secondItem="hVc-Lf-kZA" secondAttribute="bottom" id="dKB-3B-F9s"/>
+                <constraint firstItem="hVc-Lf-kZA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="j6c-hN-qwW"/>
+                <constraint firstItem="hVc-Lf-kZA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yoR-Nt-iKp"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
         </view>
     </objects>
     <resources>

@@ -29,7 +29,9 @@ class ProfileModuleRouter: ProfileModuleRouterProtocol {
             view.navigationController?.pushViewController(viewController, animated: true)
             RepositoriesChapterRouter.createRepositoriesChapter(with: viewController as! RepositoriesChapterViewProtocol, and: type)
         case .starred:
-            print("Starred in progress")
+            viewController = StarredRepositoriesView()
+            view.navigationController?.pushViewController(viewController, animated: true)
+            RepositoriesChapterRouter.createRepositoriesChapter(with: viewController as! RepositoriesChapterViewProtocol, and: type)
         case .organizations:
             print("Organizations in progress")
         }

@@ -8,6 +8,7 @@
 import Foundation
 
 struct Repository {
+    let authorName: String?
     let title: String
     let description: String?
     let starsCount: Int

@@ -31,6 +31,13 @@
 		94F110932906772200E22BC0 /* RepositoriesChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */; };
 		94F110942906772200E22BC0 /* RepositoriesChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */; };
 		94F1109629068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */; };
+		94F1109B2906B3DC00E22BC0 /* StarredRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110992906B3DC00E22BC0 /* StarredRepositoriesView.swift */; };
+		94F1109C2906B3DC00E22BC0 /* StarredRepositoriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F1109A2906B3DC00E22BC0 /* StarredRepositoriesView.xib */; };
+		94F1109E2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1109D2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift */; };
+		94F110A32906D78600E22BC0 /* StarredRepocitoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110A12906D78600E22BC0 /* StarredRepocitoriesCell.swift */; };
+		94F110A42906D78600E22BC0 /* StarredRepocitoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F110A22906D78600E22BC0 /* StarredRepocitoriesCell.xib */; };
+		94F110A72906DEF500E22BC0 /* MyListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110A52906DEF500E22BC0 /* MyListsCell.swift */; };
+		94F110A82906DEF500E22BC0 /* MyListsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F110A62906DEF500E22BC0 /* MyListsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +67,13 @@
 		94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterCell.swift; sourceTree = "<group>"; };
 		94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesChapterCell.xib; sourceTree = "<group>"; };
 		94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoriesChapterView+TableView.swift"; sourceTree = "<group>"; };
+		94F110992906B3DC00E22BC0 /* StarredRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredRepositoriesView.swift; sourceTree = "<group>"; };
+		94F1109A2906B3DC00E22BC0 /* StarredRepositoriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarredRepositoriesView.xib; sourceTree = "<group>"; };
+		94F1109D2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarredRepositoriesView+TableView.swift"; sourceTree = "<group>"; };
+		94F110A12906D78600E22BC0 /* StarredRepocitoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredRepocitoriesCell.swift; sourceTree = "<group>"; };
+		94F110A22906D78600E22BC0 /* StarredRepocitoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarredRepocitoriesCell.xib; sourceTree = "<group>"; };
+		94F110A52906DEF500E22BC0 /* MyListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsCell.swift; sourceTree = "<group>"; };
+		94F110A62906DEF500E22BC0 /* MyListsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyListsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				94F110972906B25000E22BC0 /* UserRepositories */,
+				94F110982906B39000E22BC0 /* StarredRepositories */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,10 +282,40 @@
 				94F11088290489AB00E22BC0 /* RepositoriesChapterView.xib */,
 				94F11087290489AB00E22BC0 /* RepositoriesChapterView.swift */,
 				94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */,
+				94F1109F2906D73400E22BC0 /* Cells */,
+			);
+			path = UserRepositories;
+			sourceTree = "<group>";
+		};
+		94F110982906B39000E22BC0 /* StarredRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				94F1109A2906B3DC00E22BC0 /* StarredRepositoriesView.xib */,
+				94F110992906B3DC00E22BC0 /* StarredRepositoriesView.swift */,
+				94F1109D2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift */,
+				94F110A02906D73F00E22BC0 /* Cells */,
+			);
+			path = StarredRepositories;
+			sourceTree = "<group>";
+		};
+		94F1109F2906D73400E22BC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */,
 				94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */,
 			);
-			path = UserRepositories;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		94F110A02906D73F00E22BC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				94F110A22906D78600E22BC0 /* StarredRepocitoriesCell.xib */,
+				94F110A12906D78600E22BC0 /* StarredRepocitoriesCell.swift */,
+				94F110A62906DEF500E22BC0 /* MyListsCell.xib */,
+				94F110A52906DEF500E22BC0 /* MyListsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +376,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F1109C2906B3DC00E22BC0 /* StarredRepositoriesView.xib in Resources */,
 				94F1104E2902ADC900E22BC0 /* LaunchScreen.storyboard in Resources */,
+				94F110A42906D78600E22BC0 /* StarredRepocitoriesCell.xib in Resources */,
 				94F1104B2902ADC900E22BC0 /* Assets.xcassets in Resources */,
 				94F1108A290489AB00E22BC0 /* RepositoriesChapterView.xib in Resources */,
+				94F110A82906DEF500E22BC0 /* MyListsCell.xib in Resources */,
 				94F110942906772200E22BC0 /* RepositoriesChapterCell.xib in Resources */,
 				94F110492902ADC800E22BC0 /* Main.storyboard in Resources */,
 			);
@@ -350,10 +398,14 @@
 				94F1109629068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift in Sources */,
 				94F110622903C30B00E22BC0 /* Profile.swift in Sources */,
 				94F1108C290489F800E22BC0 /* RepositoriesChapterInteractor.swift in Sources */,
+				94F1109B2906B3DC00E22BC0 /* StarredRepositoriesView.swift in Sources */,
+				94F110A32906D78600E22BC0 /* StarredRepocitoriesCell.swift in Sources */,
 				94F1106E2903C66500E22BC0 /* ProfileModuleProtocols.swift in Sources */,
 				94F1108E29048A0500E22BC0 /* RepositoriesChapterPresenter.swift in Sources */,
 				94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */,
+				94F1109E2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift in Sources */,
 				94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */,
+				94F110A72906DEF500E22BC0 /* MyListsCell.swift in Sources */,
 				94F110932906772200E22BC0 /* RepositoriesChapterCell.swift in Sources */,
 				94F110722903C6D700E22BC0 /* ProfileModuleView.swift in Sources */,
 				94F11089290489AB00E22BC0 /* RepositoriesChapterView.swift in Sources */,
