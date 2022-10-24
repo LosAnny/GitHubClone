@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94584CFC29071369006B750F /* PopularRepositoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94584CFA29071369006B750F /* PopularRepositoriesCell.swift */; };
+		94584CFD29071369006B750F /* PopularRepositoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94584CFB29071369006B750F /* PopularRepositoriesCell.xib */; };
+		94584D002907271C006B750F /* ProfileModuleView+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94584CFF2907271C006B750F /* ProfileModuleView+CollectionView.swift */; };
 		94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110412902ADC800E22BC0 /* AppDelegate.swift */; };
 		94F110442902ADC800E22BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110432902ADC800E22BC0 /* SceneDelegate.swift */; };
 		94F110492902ADC800E22BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F110472902ADC800E22BC0 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94584CFA29071369006B750F /* PopularRepositoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRepositoriesCell.swift; sourceTree = "<group>"; };
+		94584CFB29071369006B750F /* PopularRepositoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularRepositoriesCell.xib; sourceTree = "<group>"; };
+		94584CFF2907271C006B750F /* ProfileModuleView+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileModuleView+CollectionView.swift"; sourceTree = "<group>"; };
 		94F1103E2902ADC800E22BC0 /* GitHubClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F110412902ADC800E22BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F110432902ADC800E22BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94584CFE2907260F006B750F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				94584CFB29071369006B750F /* PopularRepositoriesCell.xib */,
+				94584CFA29071369006B750F /* PopularRepositoriesCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		94F110352902ADC800E22BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +184,8 @@
 				94F110472902ADC800E22BC0 /* Main.storyboard */,
 				94F110712903C6D700E22BC0 /* ProfileModuleView.swift */,
 				94F110732903C81300E22BC0 /* ProfileModuleView+TableView.swift */,
+				94584CFF2907271C006B750F /* ProfileModuleView+CollectionView.swift */,
+				94584CFE2907260F006B750F /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94584CFD29071369006B750F /* PopularRepositoriesCell.xib in Resources */,
 				94F1109C2906B3DC00E22BC0 /* StarredRepositoriesView.xib in Resources */,
 				94F1104E2902ADC900E22BC0 /* LaunchScreen.storyboard in Resources */,
 				94F110A42906D78600E22BC0 /* StarredRepocitoriesCell.xib in Resources */,
@@ -405,11 +423,13 @@
 				94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */,
 				94F1109E2906B40000E22BC0 /* StarredRepositoriesView+TableView.swift in Sources */,
 				94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */,
+				94584CFC29071369006B750F /* PopularRepositoriesCell.swift in Sources */,
 				94F110A72906DEF500E22BC0 /* MyListsCell.swift in Sources */,
 				94F110932906772200E22BC0 /* RepositoriesChapterCell.swift in Sources */,
 				94F110722903C6D700E22BC0 /* ProfileModuleView.swift in Sources */,
 				94F11089290489AB00E22BC0 /* RepositoriesChapterView.swift in Sources */,
 				94F1107A2904268300E22BC0 /* ProfileModulePresenter.swift in Sources */,
+				94584D002907271C006B750F /* ProfileModuleView+CollectionView.swift in Sources */,
 				94F110442902ADC800E22BC0 /* SceneDelegate.swift in Sources */,
 				94F110842904896A00E22BC0 /* RepositoriesChapterProtocols.swift in Sources */,
 				94F110662903C34C00E22BC0 /* Repository.swift in Sources */,

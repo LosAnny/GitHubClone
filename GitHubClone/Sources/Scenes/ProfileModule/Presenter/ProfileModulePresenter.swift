@@ -24,7 +24,7 @@ class ProfileModulePresenter: ProfileModulePresenterProtocol {
 
 extension ProfileModulePresenter: ProfileModuleOutputInteractorProtocol {
     
-    func takeProfileModuleData(with profile: Profile, and chapters: [Chapter]) {
-        view?.showProfile(with: profile, and: chapters)
+    func takeProfileModuleData(with profile: Profile, _ chapters: [Chapter], and repositories: [Repository]) {
+        view?.showProfile(with: profile, chapters, and: repositories)
     }
 }

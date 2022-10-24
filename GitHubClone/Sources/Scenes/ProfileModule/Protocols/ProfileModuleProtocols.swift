@@ -12,7 +12,7 @@ protocol ProfileModuleViewProtocol: AnyObject {
     var presenter: ProfileModulePresenterProtocol? { get set }
     
     // Presenter -> View
-    func showProfile(with profile: Profile, and chapters: [Chapter])
+    func showProfile(with profile: Profile, _ chapters: [Chapter], and repositories: [Repository])
 }
 
 protocol ProfileModulePresenterProtocol: AnyObject {
@@ -37,7 +37,9 @@ protocol ProfileModuleInputInteractorProtocol: AnyObject {
 protocol ProfileModuleOutputInteractorProtocol: AnyObject {
     
     // Interactor -> Presenter
-    func takeProfileModuleData(with profile: Profile, and chapters: [Chapter])
+    func takeProfileModuleData(with profile: Profile,
+                               _ chapters: [Chapter],
+                               and repositories: [Repository])
 }
 
 protocol ProfileModuleRouterProtocol: AnyObject {

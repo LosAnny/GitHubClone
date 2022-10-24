@@ -12,6 +12,8 @@ class ProfileModuleView: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet weak var chaptersTableView: UITableView!
+    @IBOutlet weak var repositoriesCollectionView: UICollectionView!
+    
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var profileTitle: UILabel!
     @IBOutlet weak var followersCount: UILabel!
@@ -21,6 +23,7 @@ class ProfileModuleView: UIViewController {
     
     var presenter: ProfileModulePresenterProtocol?
     var chaptersList = [Chapter]()
+    var popularRepositories = [Repository]()
     
     // MARK: - Lifecycle
 
@@ -30,13 +33,15 @@ class ProfileModuleView: UIViewController {
         ProfileModuleRouter.createProfileModule(for: self)
         presenter?.viewDidLoad()
         setupTableView()
+        setupCollectionView()
     }
 }
 
 extension ProfileModuleView: ProfileModuleViewProtocol {
     
-    func showProfile(with profile: Profile, and chapters: [Chapter]) {
+    func showProfile(with profile: Profile, _ chapters: [Chapter], and repositories: [Repository]) {
         chaptersList = chapters
+        popularRepositories = repositories
         
         profileImageView.image = UIImage(named: profile.imageName)
         profileTitle.text = profile.title

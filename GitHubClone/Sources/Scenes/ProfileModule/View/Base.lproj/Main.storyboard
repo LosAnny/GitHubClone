@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,7 +31,6 @@
         <!--title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ProfileModuleView" customModule="GitHubClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -117,6 +117,28 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-oR-XS8">
+                                <rect key="frame" x="0.0" y="476.5" width="414" height="206"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d5O-tf-4gX">
+                                    <size key="itemSize" width="381" height="212"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopularRepositoriesCell" id="kDO-f4-hnS" customClass="PopularRepositoriesCell" customModule="GitHubClone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="-3" width="381" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ad8-f9-1ac">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="212"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="381" height="212"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
@@ -131,15 +153,19 @@
                             <constraint firstItem="MqV-h7-LRU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.245" id="Olw-uc-MY6"/>
                             <constraint firstItem="LTz-58-zDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PLX-q4-xFl"/>
                             <constraint firstItem="Pbj-G1-4IG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="R06-Je-037"/>
+                            <constraint firstItem="tZ3-oR-XS8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T0V-qM-csY"/>
                             <constraint firstItem="Pbj-G1-4IG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TGN-z3-ce7"/>
                             <constraint firstItem="YAP-uR-h13" firstAttribute="centerY" secondItem="LTz-58-zDA" secondAttribute="centerY" id="UFt-aJ-izk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VYP-Nx-gQO" secondAttribute="trailing" constant="20" id="ZcO-by-7TW"/>
+                            <constraint firstItem="tZ3-oR-XS8" firstAttribute="top" secondItem="MqV-h7-LRU" secondAttribute="bottom" constant="50" id="hZF-QP-oLL"/>
                             <constraint firstItem="LTz-58-zDA" firstAttribute="top" secondItem="Pbj-G1-4IG" secondAttribute="bottom" constant="20" id="iv8-7V-TN9"/>
                             <constraint firstItem="SG3-ag-PY4" firstAttribute="leading" secondItem="1aJ-Dy-W9z" secondAttribute="trailing" constant="8" id="iyQ-XJ-p1P"/>
                             <constraint firstItem="1aJ-Dy-W9z" firstAttribute="leading" secondItem="LTz-58-zDA" secondAttribute="trailing" constant="8" id="kpZ-UU-N16"/>
                             <constraint firstItem="JL6-wO-xQx" firstAttribute="centerY" secondItem="LTz-58-zDA" secondAttribute="centerY" id="muJ-Px-OzV"/>
+                            <constraint firstItem="tZ3-oR-XS8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.23" id="oVo-Ff-hSk"/>
                             <constraint firstItem="1aJ-Dy-W9z" firstAttribute="centerY" secondItem="LTz-58-zDA" secondAttribute="centerY" id="pPC-Q7-v7G"/>
                             <constraint firstItem="SG3-ag-PY4" firstAttribute="centerY" secondItem="LTz-58-zDA" secondAttribute="centerY" id="qD3-I8-Eqd"/>
+                            <constraint firstItem="tZ3-oR-XS8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s26-b7-3GA"/>
                             <constraint firstItem="YAP-uR-h13" firstAttribute="leading" secondItem="JL6-wO-xQx" secondAttribute="trailing" constant="8" id="t3u-b2-Bwq"/>
                         </constraints>
                     </view>
@@ -159,8 +185,10 @@
                         <outlet property="followingCount" destination="JL6-wO-xQx" id="0BP-hI-B5q"/>
                         <outlet property="profileImageView" destination="Pbj-G1-4IG" id="IWc-g3-cqq"/>
                         <outlet property="profileTitle" destination="VYP-Nx-gQO" id="m7Q-SG-7tZ"/>
+                        <outlet property="repositoriesCollectionView" destination="tZ3-oR-XS8" id="ssb-T5-fWF"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="116.51785714285714"/>
         </scene>

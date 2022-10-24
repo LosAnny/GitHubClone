@@ -14,7 +14,8 @@ class ProfileModuleInteractor: ProfileModuleInputInteractorProtocol {
     func getProfileModuleData() {
         let profile = Common.getProfileInfo()
         let chapters = Common.getProfileChapters()
+        let repositoies = Common.getRepositories()
         
-        presenter?.takeProfileModuleData(with: profile, and: chapters)
+        presenter?.takeProfileModuleData(with: profile, chapters, and: repositoies)
     }
 }
