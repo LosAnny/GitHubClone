@@ -34,7 +34,13 @@ extension ProfileModuleView: UITableViewDataSource {
 }
 
 extension ProfileModuleView: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (chaptersTableView.frame.height - tableView.sectionFooterHeight - tableView.sectionHeaderHeight) / CGFloat(chaptersList.count)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let typeSelectChapter = chaptersList[indexPath.row].type
+        presenter?.showChapter(with: typeSelectChapter, from: self)
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Анна Лошакова on 22.10.2022.
 //
 
-import Foundation
+import UIKit
 
 protocol ProfileModuleViewProtocol: AnyObject {
     
@@ -23,7 +23,7 @@ protocol ProfileModulePresenterProtocol: AnyObject {
     var router: ProfileModuleRouterProtocol? { get set }
 
     func viewDidLoad()
-    //func showFruitSelection(with fruit: Fruit, from view: UIViewController)
+    func showChapter(with type: ChapterType, from view: UIViewController)
 }
 
 protocol ProfileModuleInputInteractorProtocol: AnyObject {
@@ -43,6 +43,6 @@ protocol ProfileModuleOutputInteractorProtocol: AnyObject {
 protocol ProfileModuleRouterProtocol: AnyObject {
     
     // Presenter -> Router
-    //func pushToChapterDetail(with type: ChapterType)
     static func createProfileModule(for view: ProfileModuleViewProtocol)
+    func pushToChapter(with type: ChapterType, from view: UIViewController)
 }

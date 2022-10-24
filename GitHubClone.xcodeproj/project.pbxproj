@@ -22,6 +22,15 @@
 		94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F11075290423A800E22BC0 /* ProfileModuleRouter.swift */; };
 		94F110782904260300E22BC0 /* ProfileModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110772904260300E22BC0 /* ProfileModuleInteractor.swift */; };
 		94F1107A2904268300E22BC0 /* ProfileModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110792904268300E22BC0 /* ProfileModulePresenter.swift */; };
+		94F110842904896A00E22BC0 /* RepositoriesChapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110832904896A00E22BC0 /* RepositoriesChapterProtocols.swift */; };
+		94F11089290489AB00E22BC0 /* RepositoriesChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F11087290489AB00E22BC0 /* RepositoriesChapterView.swift */; };
+		94F1108A290489AB00E22BC0 /* RepositoriesChapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F11088290489AB00E22BC0 /* RepositoriesChapterView.xib */; };
+		94F1108C290489F800E22BC0 /* RepositoriesChapterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1108B290489F800E22BC0 /* RepositoriesChapterInteractor.swift */; };
+		94F1108E29048A0500E22BC0 /* RepositoriesChapterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1108D29048A0500E22BC0 /* RepositoriesChapterPresenter.swift */; };
+		94F1109029048A1600E22BC0 /* RepositoriesChapterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1108F29048A1600E22BC0 /* RepositoriesChapterRouter.swift */; };
+		94F110932906772200E22BC0 /* RepositoriesChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */; };
+		94F110942906772200E22BC0 /* RepositoriesChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */; };
+		94F1109629068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +51,15 @@
 		94F11075290423A800E22BC0 /* ProfileModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleRouter.swift; sourceTree = "<group>"; };
 		94F110772904260300E22BC0 /* ProfileModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleInteractor.swift; sourceTree = "<group>"; };
 		94F110792904268300E22BC0 /* ProfileModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModulePresenter.swift; sourceTree = "<group>"; };
+		94F110832904896A00E22BC0 /* RepositoriesChapterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterProtocols.swift; sourceTree = "<group>"; };
+		94F11087290489AB00E22BC0 /* RepositoriesChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterView.swift; sourceTree = "<group>"; };
+		94F11088290489AB00E22BC0 /* RepositoriesChapterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesChapterView.xib; sourceTree = "<group>"; };
+		94F1108B290489F800E22BC0 /* RepositoriesChapterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterInteractor.swift; sourceTree = "<group>"; };
+		94F1108D29048A0500E22BC0 /* RepositoriesChapterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterPresenter.swift; sourceTree = "<group>"; };
+		94F1108F29048A1600E22BC0 /* RepositoriesChapterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterRouter.swift; sourceTree = "<group>"; };
+		94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesChapterCell.swift; sourceTree = "<group>"; };
+		94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesChapterCell.xib; sourceTree = "<group>"; };
+		94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoriesChapterView+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +120,10 @@
 		94F110572903219800E22BC0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				94F1105D2903232500E22BC0 /* Entity */,
+				94F110672903C45C00E22BC0 /* Common */,
 				94F11059290322E400E22BC0 /* ProfileModule */,
+				94F1107D2904879500E22BC0 /* RepositoriesChapter */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -120,11 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				94F1106C2903C63800E22BC0 /* Protocols */,
-				94F110672903C45C00E22BC0 /* Common */,
 				94F1105A290322FC00E22BC0 /* View */,
 				94F1105B2903230A00E22BC0 /* Interactor */,
 				94F1105C2903231600E22BC0 /* Presenter */,
-				94F1105D2903232500E22BC0 /* Entity */,
 				94F1105E2903233B00E22BC0 /* Router */,
 			);
 			path = ProfileModule;
@@ -133,8 +152,8 @@
 		94F1105A290322FC00E22BC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				94F110712903C6D700E22BC0 /* ProfileModuleView.swift */,
 				94F110472902ADC800E22BC0 /* Main.storyboard */,
+				94F110712903C6D700E22BC0 /* ProfileModuleView.swift */,
 				94F110732903C81300E22BC0 /* ProfileModuleView+TableView.swift */,
 			);
 			path = View;
@@ -188,6 +207,70 @@
 				94F1106D2903C66500E22BC0 /* ProfileModuleProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		94F1107D2904879500E22BC0 /* RepositoriesChapter */ = {
+			isa = PBXGroup;
+			children = (
+				94F1107E290488B800E22BC0 /* Protocols */,
+				94F1107F290488BF00E22BC0 /* View */,
+				94F11080290488D400E22BC0 /* Interactor */,
+				94F11081290488DE00E22BC0 /* Presenter */,
+				94F11082290488E400E22BC0 /* Router */,
+			);
+			path = RepositoriesChapter;
+			sourceTree = "<group>";
+		};
+		94F1107E290488B800E22BC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				94F110832904896A00E22BC0 /* RepositoriesChapterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		94F1107F290488BF00E22BC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94F110972906B25000E22BC0 /* UserRepositories */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94F11080290488D400E22BC0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				94F1108B290489F800E22BC0 /* RepositoriesChapterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		94F11081290488DE00E22BC0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				94F1108D29048A0500E22BC0 /* RepositoriesChapterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		94F11082290488E400E22BC0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				94F1108F29048A1600E22BC0 /* RepositoriesChapterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		94F110972906B25000E22BC0 /* UserRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				94F11088290489AB00E22BC0 /* RepositoriesChapterView.xib */,
+				94F11087290489AB00E22BC0 /* RepositoriesChapterView.swift */,
+				94F1109529068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift */,
+				94F110922906772200E22BC0 /* RepositoriesChapterCell.xib */,
+				94F110912906772200E22BC0 /* RepositoriesChapterCell.swift */,
+			);
+			path = UserRepositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +333,8 @@
 			files = (
 				94F1104E2902ADC900E22BC0 /* LaunchScreen.storyboard in Resources */,
 				94F1104B2902ADC900E22BC0 /* Assets.xcassets in Resources */,
+				94F1108A290489AB00E22BC0 /* RepositoriesChapterView.xib in Resources */,
+				94F110942906772200E22BC0 /* RepositoriesChapterCell.xib in Resources */,
 				94F110492902ADC800E22BC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,16 +347,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F110642903C33000E22BC0 /* Chapter.swift in Sources */,
+				94F1109629068FDF00E22BC0 /* RepositoriesChapterView+TableView.swift in Sources */,
 				94F110622903C30B00E22BC0 /* Profile.swift in Sources */,
+				94F1108C290489F800E22BC0 /* RepositoriesChapterInteractor.swift in Sources */,
 				94F1106E2903C66500E22BC0 /* ProfileModuleProtocols.swift in Sources */,
+				94F1108E29048A0500E22BC0 /* RepositoriesChapterPresenter.swift in Sources */,
 				94F110422902ADC800E22BC0 /* AppDelegate.swift in Sources */,
 				94F11076290423A800E22BC0 /* ProfileModuleRouter.swift in Sources */,
+				94F110932906772200E22BC0 /* RepositoriesChapterCell.swift in Sources */,
 				94F110722903C6D700E22BC0 /* ProfileModuleView.swift in Sources */,
+				94F11089290489AB00E22BC0 /* RepositoriesChapterView.swift in Sources */,
 				94F1107A2904268300E22BC0 /* ProfileModulePresenter.swift in Sources */,
 				94F110442902ADC800E22BC0 /* SceneDelegate.swift in Sources */,
+				94F110842904896A00E22BC0 /* RepositoriesChapterProtocols.swift in Sources */,
 				94F110662903C34C00E22BC0 /* Repository.swift in Sources */,
 				94F110782904260300E22BC0 /* ProfileModuleInteractor.swift in Sources */,
 				94F110742903C81300E22BC0 /* ProfileModuleView+TableView.swift in Sources */,
+				94F1109029048A1600E22BC0 /* RepositoriesChapterRouter.swift in Sources */,
 				94F1106B2903C47F00E22BC0 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@
 //  Created by Анна Лошакова on 22.10.2022.
 //
 
-import Foundation
+import UIKit
 
 class ProfileModulePresenter: ProfileModulePresenterProtocol {
     
@@ -15,6 +15,10 @@ class ProfileModulePresenter: ProfileModulePresenterProtocol {
     
     func viewDidLoad() {
         interactor?.getProfileModuleData()
+    }
+    
+    func showChapter(with type: ChapterType, from view: UIViewController) {
+        router?.pushToChapter(with: type, from: view)
     }
 }
 
