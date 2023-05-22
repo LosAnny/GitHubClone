@@ -50,4 +50,8 @@ extension ProfileModuleView: ProfileModuleViewProtocol {
         
         navigationController?.navigationBar.topItem?.title = profile.title
     }
+
+    func someFunc() {
+        
+    }
 }
